@@ -1,0 +1,15 @@
+:host {
+    .page-container{
+        height: calc(100vh - 40px);
+        .textarea-form {
+            border: none;
+            border-color: Transparent;
+            padding: 5px 40px;
+            line-height: 22px;
+            background: #fdfd7c;
+            outline: none;
+            color: #222222;
+            font-size: 16px;
+        }
+    }
+}

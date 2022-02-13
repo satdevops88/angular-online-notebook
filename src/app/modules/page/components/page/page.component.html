@@ -1,0 +1,17 @@
+<div class="page-container" fxLayout="column" fxLayoutAlign="space-around stretch">
+    <mat-form-field appearance="fill" class="textarea-form">
+        <textarea matInput [(ngModel)]="pageData" (ngModelChange)="onChangeData()" placeholder="Enter text here"
+            rows="20"></textarea>
+    </mat-form-field>
+
+    <div fxLayout="row" fxLayoutAlign="space-evenly center">
+        <button mat-icon-button aria-label="Prev Page" color="accent" [disabled]="pageId==1" (click)="goPrevPage()">
+            <mat-icon>arrow_back</mat-icon>
+        </button>
+        <mat-label>{{pageId}}</mat-label>
+        <button mat-icon-button aria-label="Next Page" color="accent" [disabled]="pageId==maxPageNum"
+            (click)="goNextPage()">
+            <mat-icon>arrow_forward</mat-icon>
+        </button>
+    </div>
+</div>
